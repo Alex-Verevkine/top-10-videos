@@ -1,0 +1,28 @@
+@import "../../../styles/variables.scss";
+.appTitle {
+  color: $cs-white;
+  margin: 0px;
+  padding-bottom: 4px;
+}
+
+.header {
+  min-height: 60px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: $cs-brand-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  padding: 0 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+}
+
+.selectContainer {
+  padding-bottom: 4px;
+}

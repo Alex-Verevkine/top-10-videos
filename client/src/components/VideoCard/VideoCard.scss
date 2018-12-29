@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+.cardMedia {
+  width: 100%;
+}
+
+.resultItem {
+  margin: 0.5em;
+  width: 100%;
+  max-width: 808px;
+  .videoContent {
+    padding: 0px;
+    border-bottom: 4px solid $cs-brand-color;
+    border-left: 4px solid $cs-brand-color;
+    border-right: 4px solid $cs-brand-color;
+
+    display: flex;
+    &.facebook {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .cardHeader {
+    padding: 4px 12px;
+    background-color: $cs-brand-color;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: $cs-white;
+  }
+}
