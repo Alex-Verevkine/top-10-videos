@@ -24,6 +24,7 @@ const _returnVideoElementByType = video => {
             type="text/html"
             src={getSourceUrl(video.videoId, video.source)}
             frameBorder="0"
+            allowFullScreen
           />
         );
       case STANDARD_PLAYER:
