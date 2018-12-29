@@ -19,7 +19,7 @@ const _returnVideoElementByType = video => {
       case FACEBOOK_PLAYER:
         return (
           <iframe
-            title="ysz5S6PUM-U"
+            title={video.videoId}
             className={classes.embeddedPlayer}
             type="text/html"
             src={getSourceUrl(video.videoId, video.source)}
