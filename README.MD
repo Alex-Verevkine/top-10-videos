@@ -1,13 +1,14 @@
 # Setup guide
 
-- run `npm i` in root folder directory.
 - go to `./client` directory and run `npm i`.
 - go to `./server` directory and run `npm i`.
 
-### After setup finishes, start the app:
+### After setup finishes, run this scripts below:
 
-- run `npm start` from root folder directory, it will run concurrently both, server and client.
+- run `npm start` on `./client` directory to start client.
+- run `npm start` on `./server` directory to start server.
 
 ### Tests:
 
-- run `npm test` from root folder directory, it will run concurrently both, server and client tests.
+- run `npm test` on `./client` directory to run client tests.
+- run `npm test` on `./server` directory to run server tests.
