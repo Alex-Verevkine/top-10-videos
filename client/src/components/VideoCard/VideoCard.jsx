@@ -13,7 +13,7 @@ export const VideoCard = props => {
   })(CardContent);
 
   return (
-    <Card className={`${classes.resultItem} `} raised>
+    <Card className={classes.resultItem} raised>
       <div className={classes.cardHeader}>
         <span>{`${index + 1} - ${video.title ? video.title : ""}`}</span>
         <span>{`${nFormatter(video.views, 1)} Views`}</span>

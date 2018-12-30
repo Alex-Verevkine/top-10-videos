@@ -15,7 +15,10 @@ class ErrorBoundary extends Component {
     this.timerOneAtTheTimeId = setTimeout(() => {
       this.setState({ error: null, isError: false });
     }, 3000);
-    this.setState({ error: error, isError: true });
+    this.setState({
+      error: error.response ? error.response.data : error,
+      isError: true
+    });
   }
   componentWillMount() {
     this.reqIntercetor = axiosHTTPInstance.interceptors.request.use(req => {
@@ -30,7 +33,10 @@ class ErrorBoundary extends Component {
         this.timerOneAtTheTimeId = setTimeout(() => {
           this.setState({ error: null, isError: false });
         }, 3000);
-        this.setState({ error: error.response.data, isError: true });
+        this.setState({
+          error: error.response ? error.response.data : error,
+          isError: true
+        });
       }
     );
   }
